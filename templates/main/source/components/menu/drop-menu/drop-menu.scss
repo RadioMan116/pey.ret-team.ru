@@ -15,7 +15,7 @@
 		position: relative;
 		display: flex;
 		align-items: center;
-		margin-bottom: 4px;
+		margin-bottom: 0px;
 
 		&__list {
 			margin: 0;
@@ -50,7 +50,7 @@
 			box-shadow: 0 2px 21px 0 transparent;
 			letter-spacing: 0.1px;
 			cursor: pointer;
-			background: url("https://icongr.am/entypo/chevron-down.svg?color=d6d6d6") 97%/14px no-repeat;
+			background: url("https://icongr.am/entypo/chevron-down.svg?color=d6d6d6") 94%/14px no-repeat;
 			white-space: nowrap;
 
 			&.last {
@@ -71,7 +71,7 @@
 			&:hover {
 
 				color: #394791;
-				background: url("https://icongr.am/entypo/chevron-down.svg?color=394791") 97%/14px no-repeat;
+				background: url("https://icongr.am/entypo/chevron-down.svg?color=394791") 94%/14px no-repeat;
 			}
 
 			&.last {
@@ -124,7 +124,7 @@
 				z-index: 999;
 				position: relative;
 				color: #394791;
-				background: url("https://icongr.am/entypo/chevron-up.svg?color=394791") 97%/14px no-repeat;
+				background: url("https://icongr.am/entypo/chevron-up.svg?color=394791") 94%/14px no-repeat;
 			}
 
 			.dropdown-menu__parent {
@@ -530,7 +530,7 @@
 
 
 // 			.dropdown-menu__title {
-// 				background: url("https://icongr.am/entypo/chevron-down.svg?color=666666") 97%/18px no-repeat;
+// 				background: url("https://icongr.am/entypo/chevron-down.svg?color=666666") 94%/18px no-repeat;
 // 				box-shadow: none !important;
 // 			}
 

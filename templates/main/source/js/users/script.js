@@ -2229,6 +2229,10 @@ $(document).ready(function () {
 			}
 		})
 	})();
+
+	$(function () {
+		$('.special-offers__text').matchHeight();
+	});
 });
 $(window).on('load', function () {
 	var windowWidth2 = $(window).width();

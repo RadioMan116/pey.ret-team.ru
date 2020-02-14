@@ -20,7 +20,7 @@
 		font-family: "Roboto Condensed";
 		font-size: 30px;
 		font-weight: 400;
-		margin-bottom: 40px;
+		margin-bottom: 42px;
 		white-space: nowrap;
 		width: 100%;
 	}
@@ -33,7 +33,7 @@
 		justify-content: flex-start;
 		align-content: stretch;
 		border: 1px solid #f1f1f1;
-		min-height: 445px;
+		// min-height: 445px;
 		box-shadow: 0 2px 21px 0 transparent;
 
 
@@ -50,7 +50,7 @@
 		line-height: 22px;
 		letter-spacing: -0.2px;
 		color: #333333;
-		padding: 30px 0 17px;
+		margin: 25px 0 10px;
 		display: block;
 		flex-shrink: 0;
 
@@ -191,23 +191,24 @@
 		//     text-align: center;
 		//     justify-content: center;
 		// }
-		&:before {
-			content: '';
-			background-image: url(../images/shopping-cart.png);
-			width: 12px;
-			height: 12px;
-			background-size: 12px;
-			margin-right: 8px;
-		}
+		// &:before {
+		// 	content: '';
+		// 	background-image: url(../images/shopping-cart.png);
+		// 	width: 12px;
+		// 	height: 12px;
+		// 	background-size: 12px;
+		// 	margin-right: 8px;
+		// }
 	}
 
 	&__pic {
 		width: 100%;
 		max-height: 250px;
-		height: 100%;
+		// height: 100%;
 		align-items: center;
 		display: flex;
 		justify-content: center;
+		flex-shrink: 0;
 
 		img {
 			width: auto;
@@ -354,6 +355,14 @@
 				bottom: 0;
 			}
 		}
+		.special-offers__slide{
+			padding-top: 30px;
+		}
+	}
+
+	&__logo {
+		margin-bottom: 17px;
+		flex-shrink: 0;
 	}
 
 	@media screen and (max-width: 767px) {

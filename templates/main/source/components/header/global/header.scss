@@ -44,6 +44,10 @@
 			position: relative;
 			// margin: 2px 0;
 			border-top: 1px solid #f1f1f1;
+
+			.container {
+				align-items: unset;
+			}
 		}
 
 		.hamburger {
@@ -89,6 +93,7 @@
 			// flex-diwrection: column;
 			margin-left: auto;
 			order: -1;
+			margin-bottom: 5px;
 		}
 	}
 
@@ -106,7 +111,7 @@
 	}
 
 	&__call-phone-button {
-		width: 142px;
+		// width: 142px;
 		padding: 4px 9px;
 		font-family: 'Roboto Condensed', sans-serif;
 		font-family: "Roboto Condensed";
