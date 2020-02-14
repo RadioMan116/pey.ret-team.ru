@@ -75,16 +75,20 @@
 	&__telephones {
 		// height: 28px;
 		display: flex;
-		align-items: center;
+		// flex-direction: column;
+		// align-items: center;
 		margin-left: auto;
-		flex-grow: 1;
+		// flex-grow: 1;
 		// margin-bottom: 3px;
-		margin-left: 18px;
+		// margin-left: 18px;
+		// flex-wrap: wrap;
+		flex-direction: column;
 
 		.telephones {
 			display: flex;
-			flex-direction: column;
+			// flex-diwrection: column;
 			margin-left: auto;
+			order: -1;
 		}
 	}
 
@@ -103,13 +107,14 @@
 
 	&__call-phone-button {
 		width: 142px;
-		padding: 5px 15px;
+		padding: 4px 9px;
 		font-family: 'Roboto Condensed', sans-serif;
+		font-family: "Roboto Condensed";
 		font-size: 14px;
-		font-weight: normal;
-		font-style: normal;
-		font-stretch: condensed;
-		line-height: 1.71;
+		font-weight: 400;
+		//   line-height: 24px;
+		text-align: center;
+		line-height: 1.21;
 		letter-spacing: normal;
 		color: #394791;
 		border-radius: 3px;
@@ -118,7 +123,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		text-transform: uppercase;
+		// text-transform: uppercase;
 		display: flex;
 		white-space: nowrap;
 
@@ -296,7 +301,7 @@
 			background: url("../images/header-compare.svg") no-repeat;
 		}
 
-		margin-right: 35px;
+		// margin-right: 35px;
 
 		&:hover {
 
