@@ -1594,7 +1594,7 @@ $(document).ready(function () {
 			Inputmask("customAlias").mask("[type=tel]");
 		});
 	});
-	$(".js-about-store__button").click(function () {
+	$(".js-about-store__button,.js-about-brand__button").click(function () {
 		if ($(this).parent().hasClass("active") == false) {
 			$(this).text('Свернуть');
 			$(this).parent().addClass("active");
@@ -1604,6 +1604,7 @@ $(document).ready(function () {
 			$(this).text("Читать подробнее");
 		}
 	});
+
 	$(function () {
 		if ($('#compare_table').length > 0) {
 			$(function () {
