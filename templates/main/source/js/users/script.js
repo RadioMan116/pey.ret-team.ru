@@ -44,7 +44,7 @@ $(document).ready(function () {
 				},
 				breakpoints: {
 					480: {
-						slidesPerView: 1.5,
+						slidesPerView: 2.3,
 						slidesPerGroup: 1,
 						spaceBetween: 8,
 
@@ -983,6 +983,14 @@ $(document).ready(function () {
 				catalogThumb.parentNode.classList.add('new-catalog');
 			}
 		})();
+		(function () {
+			let productCard = document.querySelector('.product-card');
+			if (productCard) {
+				let favorite = productCard.querySelector('.product-card__social');
+				let productHeaderBottom = productCard.querySelector('.product__header_bottom');
+				productHeaderBottom.append(favorite);
+			}
+		})();
 
 	}
 	$(".js-comparison__select").click(function () {
@@ -1048,52 +1056,7 @@ $(document).ready(function () {
 	}
 	$('.filter__slider').draggable();
 	hamburger("js-hamburger", "js-menu");
-	// $('.product-card__announcing .announcing__item img').each(function () {
-	// 	var $this = $(this);
-	// 	// $this.parent().append($this.attr('alt'));
-	// 	if ($(this).attr('alt') == 'Бесплатная доставка') {
-	// 		$(this).attr('alt', 'Бесплатная <br> доставка')
-	// 		$(this).attr('title', 'Бесплатная доставка по Москве в пределах МКАД')
-	// 		$(this).parent().append($this.attr('alt'));
-	// 	}
-	// 	if ($(this).attr('alt') == 'Удобная доставка') {
-	// 		$(this).attr('alt', 'Удобная <br> доставка')
-	// 		$(this).parent().append($this.attr('alt'));
-	// 	}
-	// 	if ($(this).attr('alt') == 'Бесплатное подключение') {
-	// 		$(this).attr('alt', 'Бесплатное <br> подключение')
-	// 		$(this).attr('title', 'Бесплатное подключение на готовые коммуникации в пределах МКАД в Москве')
-	// 		$(this).parent().append($this.attr('alt'));
-	// 	}
-	// 	if ($(this).attr('alt') == 'Профессиональное подключение') {
-	// 		$(this).attr('alt', 'Профессиональное <br> подключение')
-	// 		$(this).parent().append($this.attr('alt'));
-	// 	}
-	// 	if ($(this).attr('alt') == 'Лучшее предложение') {
-	// 		$(this).attr('alt', 'Лучшее <br> предложение')
-	// 		$(this).parent().append($this.attr('alt'));
-	// 	}
-	// 	if ($(this).attr('alt') == 'Производство Болгария') {
-	// 		$(this).attr('alt', 'Сделано в <br> Болгарии')
-	// 		$(this).attr('title', 'Сделано в Болгарии')
-	// 		$(this).parent().append($this.attr('alt'));
-	// 	}
-	// 	if ($(this).attr('alt') == 'Производство Австрия') {
-	// 		$(this).attr('alt', 'Сделано в <br> Австрии')
-	// 		$(this).attr('title', 'Сделано в  Австрии')
-	// 		$(this).parent().append($this.attr('alt'));
-	// 	}
-	// 	if ($(this).attr('alt') == 'Производство Германия') {
-	// 		$(this).attr('alt', 'Сделано в <br> Германии')
-	// 		$(this).attr('title', 'Сделано в  Германии')
-	// 		$(this).parent().append($this.attr('alt'));
-	// 	}
-	// 	if ($(this).attr('alt') == 'Производство Array') {
-	// 		$(this).attr('alt', 'Производство <br> Array')
-	// 		$(this).parent().append($this.attr('alt'));
-	// 	}
 
-	// });
 	$(".filter__tags").click(function () {
 		$(this).addClass('active');
 	});
@@ -1923,53 +1886,7 @@ $(window).on('load', function () {
 				draggable: true
 			}
 		});
-		// var galleryThumbs = new Swiper('.js-gallery-thumbs', {
-		// 	spaceBetween: 20,
-		// 	slidesPerView: 5,
-		// 	freeMode: true,
-		// 	// direction: "vertical",
-		// 	watchSlidesVisibility: true,
-		// 	watchSlidesProgress: true,
-		// 	touchRatio: 0.2,
-		// 	slideToClickedSlide: true,
-		// 	breakpoints: {
-		// 		// when window width is <= 320px
-		// 		// 420: {
-		// 		//   slidesPerGroup: 1,
-		// 		//   slidesPerView: 1,
-		// 		//   spaceBetween: 0
-		// 		// },
-		// 		// // // when window width is <= 480px
-		// 		// // 480: {
-		// 		// 700: {
-		// 		//   slidesPerView: 2,
-		// 		//   slidesPerGroup: 2,
-		// 		//   spaceBetween: 20
-		// 		// },
-		// 		768: {
 
-		// 			spaceBetween: 14
-		// 		}
-		// 	},
-		// 	navigation: {
-		// 		nextEl: ".thumbs-next",
-		// 		prevEl: ".thumbs-prev"
-		// 	},
-		// });
-		var galleryTop = new Swiper('.js-gallery-top', {
-			spaceBetween: 0,
-			// navigation: {
-			// 	nextEl: '.swiper-button-next',
-			// 	prevEl: '.swiper-button-prev',
-			// },
-			pagination: {
-				el: ".gallery-top__pagination",
-				clickable: true
-			},
-			// thumbs: {
-			// 	swiper: galleryThumbs
-			// }
-		});
 	}, 100);
 
 
