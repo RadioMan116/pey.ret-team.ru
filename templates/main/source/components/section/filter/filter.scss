@@ -16,7 +16,7 @@
 		&::before {
 			width: 14px;
 			height: 14px;
-			content: url('../images/price updated.svg');
+			content: url('../images/price_updated.svg');
 			margin-right: 9px;
 			flex-shrink: 0;
 		}
@@ -357,6 +357,7 @@
 			order: 5;
 			width: 100%;
 			margin-top: 10px;
+			border-bottom: 1px dashed $base;
 		}
 	}
 
@@ -742,7 +743,7 @@
 		}
 
 		&__date {
-			margin-top: 11px;
+			margin-top: 21px;
 			margin-bottom: 18px;
 		}
 
@@ -901,6 +902,7 @@
 		display: flex;
 		position: relative;
 		padding-right: 13px;
+		max-width: 235px;
 
 		span {
 			color: #333333;
@@ -919,12 +921,13 @@
 		i[data-role="prop_angle"] {
 			position: absolute;
 			right: 0;
-			left: 220px;
+			left: 228px;
 			width: 12px;
 			height: 12px;
 			background-size: 22px;
 			background-position: center;
 			background-repeat: no-repeat;
+			top: 5px;
 		}
 
 		.fa-angle-up {
@@ -991,6 +994,15 @@
 
 			.more-text {
 				position: absolute;
+
+				&:after {
+					content: '';
+					position: absolute;
+					border-bottom: 1px dashed $base;
+					bottom: 5px;
+					width: 85px;
+					left: 0px;
+				}
 			}
 
 			.col-xs-12 {
@@ -1012,6 +1024,18 @@
 			cursor: pointer;
 			order: 5;
 			width: calc(100% - 50px);
+
+			&:after {
+				content: '';
+				position: absolute;
+				border-bottom: 1px dashed $base;
+				bottom: 5px;
+				width: 58px;
+				left: 19px;
+			}
+
+			// border-bottom: 1px dashed $base;
+
 		}
 	}
 
@@ -1166,6 +1190,10 @@
 		font-family: Arial, sans-serif;
 		font-size: 13px;
 		line-height: 20px;
+
+		span {
+			color: #999999;
+		}
 	}
 
 	.bx-filter-button-box {
@@ -1357,6 +1385,25 @@
 		}
 	}
 
+	input#del_filter {
+		display: flex;
+		align-items: center;
+		width: 176px;
+		height: 40px;
+		border-radius: 3px;
+		padding: 9px 43px 8px 16px;
+		// background: $base;
+		color: #ffffff;
+		font-family: 'Roboto Condensed', sans-serif;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 24px;
+		text-transform: uppercase;
+		background: url("../images/close-filter.svg")no-repeat calc(100% - 15px) 50% $base;
+		margin-left: -8px;
+	}
+
+
 	@media screen and (max-width: 767px) {
 		display: flex;
 		flex-direction: column;
@@ -1393,24 +1440,6 @@
 
 		}
 
-		.filter-new__button {
-			background-color: #f8f8f8;
-			order: -1;
-			padding: 11px 16px;
-
-
-			span {
-				color: $base;
-				font-family: "Roboto Condensed";
-				font-size: 14px;
-				font-weight: 400;
-				line-height: 24px;
-				text-transform: uppercase;
-				border-bottom: 1px dashed $base;
-				width: 110px;
-				height: 28px;
-			}
-		}
 
 		.filter-glossary {
 			position: unset;
@@ -1468,7 +1497,7 @@
 			display: none;
 		}
 
-		.new-catalog & {
+
 			position: relative;
 
 			&:before {
@@ -1521,7 +1550,7 @@
 
 			&.active {
 				min-width: 188px;
-				width: calc(100% - 100px);
+				width: 100%;
 
 
 				&:before {
@@ -1589,8 +1618,8 @@
 				line-height: 24px;
 				text-transform: uppercase;
 				background: url("../images/close-filter.svg")no-repeat calc(100% - 15px) 50% $base;
-				    margin-left: -8px;
+				margin-left: -8px;
 			}
-		}
+
 	}
 }

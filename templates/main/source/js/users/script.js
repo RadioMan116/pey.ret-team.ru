@@ -86,19 +86,19 @@ $(document).ready(function () {
 				},
 				breakpoints: {
 					480: {
-						slidesPerView: 1.5,
+						slidesPerView: 2.3,
 						slidesPerGroup: 1,
 						spaceBetween: 8,
 
 					},
 
 					640: {
-						slidesPerView: 3,
+						slidesPerView: 3.3,
 						slidesPerGroup: 1,
 						spaceBetween: 12
 					},
 					767: {
-						slidesPerView: 4,
+						slidesPerView: 4.3,
 						slidesPerGroup: 1,
 						spaceBetween: 16
 					},
@@ -1787,7 +1787,7 @@ $(document).ready(function () {
 		let mainCollection = document.querySelectorAll('.special-offers .container');
 		let catalog = document.querySelector('.special-offers.catalog');
 
-		$(".special-offers").each(function (index, element) {
+		$(".special-offers .container").each(function (index, element) {
 			var $this = $(this);
 			$this.find('[class ^=swiper-pagination]').addClass("instance-pagination-" + index);
 		});
@@ -2247,7 +2247,7 @@ $(window).on('load', function () {
 
 		})();
 		(function () {
-			let moreText = document.querySelector('.new-catalog .catalog__description');
+			let moreText = document.querySelector('.catalog .catalog__description');
 			if (moreText) {
 				console.log('есть');
 				let button = document.createElement('div');
