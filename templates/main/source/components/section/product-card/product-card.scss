@@ -610,14 +610,14 @@
 		// 	margin-right: 5px;
 		// }
 
-		&:after {
-			content: 'В магазин';
-			font-family: "Roboto Condensed";
-			font-size: 14px;
-			font-weight: 400;
-			line-height: 24px;
-			text-transform: uppercase;
-		}
+		// &:after {
+		// 	content: 'В магазин';
+		// 	font-family: "Roboto Condensed";
+		// 	font-size: 14px;
+		// 	font-weight: 400;
+		// 	line-height: 24px;
+		// 	text-transform: uppercase;
+		// }
 
 		@include button($margin: 0, $padding:12px 42px);
 	}
