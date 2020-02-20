@@ -515,7 +515,10 @@
 		}
 	}
 	h2+h2~p {
-		margin-bottom: 8px;
+		margin-bottom: 2px;
+		&~h2{
+			margin-top: 14px;
+		}
 	}
 
 
