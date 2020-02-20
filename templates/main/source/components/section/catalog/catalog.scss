@@ -43,6 +43,10 @@
 		.special-offers__rub {
 			line-height: 1;
 		}
+
+		+.catalog__existence {
+			display: none;
+		}
 	}
 
 	.seach-found {}
@@ -314,7 +318,7 @@
 		margin: 0 0 14px 0;
 		flex-shrink: 0;
 		padding-right: 3px;
-		flex-grow: 1;
+		flex-grow: 0;
 		// height: 20%;
 		align-items: baseline;
 		align-content: baseline;
@@ -535,7 +539,6 @@
 
 		}
 	}
-
 
 	.description {
 		padding: 45px 0 20px;
@@ -1580,10 +1583,14 @@
 		.load-more {}
 	}
 
-.special-offers__logo{
-	margin-bottom: 16px;
-	margin-top: 8;
-}
+	.special-offers__logo {
+		margin-bottom: 16px;
+		margin-top: 8;
+
+		img {
+			max-width: 105px;
+		}
+	}
 
 	@media screen and (max-width: 767px) {
 		width: 100% !important;
