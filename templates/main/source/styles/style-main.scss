@@ -463,6 +463,12 @@ picture {
 
 	}
 }
+.d-flex.flex-column-reverse.flex-md-row{
+	width: 100%;
+	.col-md-3{
+		display: none;
+	}
+}
 
 @media screen and (max-width: 767px) {
 	h1.title {
