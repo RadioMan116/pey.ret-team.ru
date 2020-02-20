@@ -56,6 +56,7 @@
 		font-size: 18px;
 		font-weight: 400;
 		line-height: 26px;
+		// margin-bottom: auto;
 	}
 
 	&__prop {
@@ -313,7 +314,7 @@
 		margin: 0 0 14px 0;
 		flex-shrink: 0;
 		padding-right: 3px;
-		flex-grow: 0;
+		flex-grow: 1;
 		// height: 20%;
 		align-items: baseline;
 		align-content: baseline;
@@ -361,15 +362,15 @@
 
 	&__presence {
 		color: #6ba86e;
-		font-family: Arial, sans-serif;
+		font-family: Arial;
 		font-size: 12px;
 		line-height: 1.8;
 		margin-bottom: 2px;
-		margin-top: 8px;
 		display: flex;
 		align-items: flex-end;
 		// flex-grow: 1;
 		flex-shrink: 0;
+		margin-top: auto;
 	}
 
 	.grey {

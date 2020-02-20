@@ -2279,6 +2279,7 @@ $(window).on('load', function () {
 
 	$(function () {
 		$('.special-offers__text').matchHeight();
+		$('.catalog__specification').matchHeight();
 	});
 
 });
