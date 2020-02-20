@@ -514,6 +514,10 @@
 			}
 		}
 	}
+	h2+h2~p {
+		margin-bottom: 8px;
+	}
+
 
 	@media screen and (max-width: 767px) {
 		margin-bottom: 30px;
