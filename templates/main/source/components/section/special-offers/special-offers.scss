@@ -53,6 +53,7 @@
 		margin: 25px 0 10px;
 		display: block;
 		flex-shrink: 0;
+		flex-grow: 1;
 
 		&:hover {
 			color: $base;
@@ -67,7 +68,7 @@
 		flex-wrap: wrap;
 		// align-items: center;
 		flex-shrink: 0;
-		flex-grow: 1;
+		// flex-grow: 1;
 		align-items: flex-end;
 		// margin-bottom: 8px;
 	}
@@ -376,6 +377,10 @@
 	&__logo {
 		margin-bottom: 17px;
 		flex-shrink: 0;
+
+		img {
+			max-width: 160px;
+		}
 	}
 
 	@media screen and (max-width: 767px) {
