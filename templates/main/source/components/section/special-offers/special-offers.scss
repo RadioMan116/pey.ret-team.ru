@@ -20,7 +20,7 @@
 		font-family: "Roboto Condensed";
 		font-size: 30px;
 		font-weight: 400;
-		margin-bottom: 42px;
+		margin-bottom: 40px;
 		white-space: nowrap;
 		width: 100%;
 	}
@@ -33,7 +33,7 @@
 		justify-content: flex-start;
 		align-content: stretch;
 		border: 1px solid #f1f1f1;
-		// min-height: 445px;
+		min-height: 445px;
 		box-shadow: 0 2px 21px 0 transparent;
 
 
@@ -50,10 +50,9 @@
 		line-height: 22px;
 		letter-spacing: -0.2px;
 		color: #333333;
-		margin: 25px 0 10px;
+		padding: 30px 0 17px;
 		display: block;
 		flex-shrink: 0;
-		flex-grow: 1;
 
 		&:hover {
 			color: $base;
@@ -68,7 +67,7 @@
 		flex-wrap: wrap;
 		// align-items: center;
 		flex-shrink: 0;
-		// flex-grow: 1;
+		flex-grow: 1;
 		align-items: flex-end;
 		// margin-bottom: 8px;
 	}
@@ -137,7 +136,7 @@
 				font-size: 13px;
 				font-weight: 400;
 				line-height: 1;
-				// text-decoration: line-through;
+				text-decoration: line-through;
 				left: 0;
 				top: unset;
 				bottom: 0;
@@ -192,25 +191,23 @@
 		//     text-align: center;
 		//     justify-content: center;
 		// }
-		// &:before {
-		// 	content: '';
-		// 	background-image: url(../images/shopping-cart.png);
-		// 	width: 12px;
-		// 	height: 12px;
-		// 	background-size: 12px;
-		// 	margin-right: 8px;
-		// }
+		&:before {
+			content: '';
+			background-image: url(../images/shopping-cart.svg);
+			width: 12px;
+			height: 12px;
+			background-size: 12px;
+			margin-right: 8px;
+		}
 	}
 
 	&__pic {
 		width: 100%;
-		max-height: 250px;
-		// height: 250px;
+		height: 250px;
 		// height: 100%;
 		align-items: center;
 		display: flex;
 		justify-content: center;
-		flex-shrink: 0;
 
 		img {
 			width: auto;
@@ -303,7 +300,7 @@
 
 	&.promotional-goods {
 		margin-top: 0;
-		margin-bottom: 40px;
+		margin-bottom: 47px;
 
 		.swiper-pagination {
 			top: 14px;
@@ -351,29 +348,27 @@
 				font-size: 13px;
 				font-weight: 400;
 				line-height: 1;
-				// text-decoration: line-through;
+				text-decoration: line-through;
 				left: 0;
 				top: unset;
 				bottom: 0;
 			}
 		}
-
-		.special-offers__slide {
-			padding-top: 30px;
-		}
-
-		.special-offers__text {}
-
-		// .special-offers__pic
-		.special-offers__text {
-			margin: 20px 0 10px;
-		}
-
-		.special-offers__logo {
-			margin-bottom: 8px;
-		}
 	}
 
+	&.sphere {
+		margin: 0;
+		padding: 32px 0 48px;
+
+		.special-offers__slide {
+			min-height: unset;
+		}
+
+		.special-offers__text {
+			text-align: center;
+			padding-bottom: 2px;
+		}
+	}
 	&__logo {
 		margin-bottom: 17px;
 		flex-shrink: 0;
