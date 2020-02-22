@@ -4589,21 +4589,7 @@
 			}
 		}
 
-		// .product-card__social {
-		// 	// order: -1;
 
-		// 	// p {
-		// 	// 	display: none;
-		// 	// }
-
-		// 	.item {
-		// 		// height: 24px;
-
-		// 		// &:first-of-type {
-		// 		// 	margin-right: 16px;
-		// 		// }
-		// 	}
-		// }
 
 		.labels {
 			order: -4;
@@ -5697,7 +5683,7 @@
 			display: none;
 		}
 
-		&.new-product-card {
+		&.new-product-card,&.js-ecom_product-detail,&[itemtype="http://schema.org/Product"] {
 			.labels {
 				position: unset;
 				justify-content: center;
