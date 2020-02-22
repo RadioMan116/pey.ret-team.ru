@@ -2339,6 +2339,7 @@ $(window).on('load', function () {
 		link.addEventListener('click',(e) => {
 			e.preventDefault();
 			window.open(url,"_blank")
+			return false
 		})
 	})
 });
