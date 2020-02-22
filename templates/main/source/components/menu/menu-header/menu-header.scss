@@ -238,6 +238,7 @@
 			display: block;
 			margin-left: 16px;
 
+
 			i {
 				color: #666;
 				font-family: Arial, sans-serif;
@@ -246,6 +247,9 @@
 				text-align: left;
 				font-style: normal;
 				margin-right: 4px;
+			}
+			&__text{
+				display: none;
 			}
 		}
 
