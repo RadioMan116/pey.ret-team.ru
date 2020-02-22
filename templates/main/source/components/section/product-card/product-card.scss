@@ -4820,7 +4820,7 @@
 				letter-spacing: normal;
 				text-align: left;
 				color: #2e2e2e !important;
-				padding: 15px 14px 2px
+				padding: 15px 14px;
 			}
 
 			.hide-tabs__characteristic.closed {
@@ -4843,6 +4843,7 @@
 					align-items: center;
 					margin-bottom: 0px;
 					display: none;
+					position: relative;
 
 
 					&:nth-child(3) {
@@ -4872,6 +4873,7 @@
 						// padding-left: 16px;
 						padding-left: 24px;
 						text-align: right;
+
 					}
 
 					&.active {

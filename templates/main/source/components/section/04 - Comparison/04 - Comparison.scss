@@ -77,7 +77,7 @@
 
 		td {
 			color: #2e2e2e;
-			font-family: Arial,sans-serif;
+			font-family: Arial, sans-serif;
 			font-size: 14px;
 			font-weight: 500;
 			// line-height: 30px;
@@ -235,7 +235,7 @@
 	&__link {
 		padding: 0px 14px;
 		color: #2e2e2e;
-		font-family: Arial,sans-serif;
+		font-family: Arial, sans-serif;
 		font-size: 14px;
 		line-height: 25px;
 		position: relative;
@@ -292,7 +292,7 @@
 
 	.open-all {
 		color: #394791;
-		font-family: Arial,sans-serif;
+		font-family: Arial, sans-serif;
 		font-size: 14px;
 		line-height: 20px;
 		margin-top: auto;
@@ -579,7 +579,7 @@
 			&.characteristic__row {
 				td {
 					color: #2e2e2e;
-					font-family: Arial,sans-serif;
+					font-family: Arial, sans-serif;
 					font-size: 14px;
 					font-weight: 700;
 					// line-height: 30px;
@@ -748,7 +748,7 @@
 					bottom: 75px;
 					left: 0px;
 					color: #d6d6d6;
-					font-family: Arial,sans-serif;
+					font-family: Arial, sans-serif;
 					font-size: 12px;
 				}
 
@@ -818,7 +818,7 @@
 				width: 100%;
 				padding: 0 12px;
 				color: #394791;
-				font-family: Arial,sans-serif;
+				font-family: Arial, sans-serif;
 				font-size: 14px;
 				line-height: 1;
 			}
@@ -838,7 +838,7 @@
 				top: -15px;
 				left: 243px;
 				color: #d6d6d6;
-				font-family: Arial,sans-serif;
+				font-family: Arial, sans-serif;
 				font-size: 12px;
 			}
 
@@ -971,13 +971,16 @@
 		&__text {
 			line-height: 1;
 			color: #394791;
-			font-family: Arial,sans-serif;
+			font-family: Arial, sans-serif;
 			font-size: 14px;
 			line-height: 20px;
 		}
 	}
 
 	@media screen and (max-width: 767px) {
+
+		background: #fff;
+
 
 		.fixed-header {
 			max-width: 100%;
@@ -1033,7 +1036,7 @@
 
 			.fixed-header__text {
 				color: #394791;
-				font-family: Arial,sans-serif;
+				font-family: Arial, sans-serif;
 				font-size: 14px;
 				line-height: 20px;
 			}
@@ -1102,7 +1105,7 @@
 					td {
 						padding: 0 0 0px 0 !important;
 						border: 0 !important;
-						font-family: Arial,sans-serif;
+						font-family: Arial, sans-serif;
 						font-size: 14px;
 						font-weight: 700;
 						line-height: 20px;
@@ -1219,7 +1222,7 @@
 					border: 1px solid #d6d6d6;
 					background-color: #ffffff;
 					color: #2e2e2e;
-					font-family: Arial,sans-serif;
+					font-family: Arial, sans-serif;
 					font-size: 14px;
 					text-align: left;
 					justify-content: flex-start;
@@ -1260,8 +1263,8 @@
 
 				.diagram__name {
 					text-align: center;
-					color: #394791;
-					font-family: Arial,sans-serif;
+					color: $base;
+					font-family: Arial, sans-serif;
 					font-size: 14px;
 					line-height: 20px;
 					padding: 0 6px;
@@ -1329,6 +1332,7 @@
 		}
 
 		.swiper-block {
+			// padding-top: 28px;
 			padding-top: 28px;
 			font-size: 12px !important;
 			font-weight: normal;
@@ -1513,8 +1517,8 @@
 			margin-top: 0;
 			padding-left: 30px;
 			background-position: 5px 0;
-			color: #394791;
-			font-family: Arial,sans-serif;
+			color: $base;
+			font-family: Arial, sans-serif;
 			font-size: 14px;
 		}
 
