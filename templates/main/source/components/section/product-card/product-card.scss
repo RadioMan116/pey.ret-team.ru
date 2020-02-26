@@ -5836,10 +5836,14 @@
 				// background: none;
 				// padding: 9px 0;
 				// order: -1;
-				// padding: 9px 0 9px 52px;
-				padding: 9px 0 9px 0px;
+				padding: 9px 0 9px 52px;
+				// padding: 9px 0 9px 0px;
 				width: 100%;
-				background: none;
+				// background: none;
+				min-height: 56px;
+				display: flex;
+				// align-items: center;
+				justify-content: center;
 
 				.delivery__info {
 					font-size: 12px;
