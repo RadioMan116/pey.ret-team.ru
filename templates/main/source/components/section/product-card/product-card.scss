@@ -26,6 +26,10 @@
 		// bottom: 100%;
 		position: absolute;
 		width: 160px;
+
+		img {
+			min-height: 32px;
+		}
 	}
 
 	&__slider {
