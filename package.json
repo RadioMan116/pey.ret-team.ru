@@ -15,7 +15,7 @@
     "pug": "^2.0.4"
   },
   "devDependencies": {
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.26.12",
     "clipboardy": "^1.2.3",
     "css-mqpacker": "^6.0.2",
     "cssnano": "^3.10.0",
